@@ -61,7 +61,6 @@ func (g GitHub) ListProjects() (int64, error) {
 		fmt.Println(err)
 	}
 	for _, project := range projectsObj {
-		if *project.Name == "日直" {
 			return *project.ID, nil
 		}
 	}
